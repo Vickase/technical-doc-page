@@ -27,7 +27,9 @@ body{
 	height: 100%;
 	border-right: solid;
 	border-color: rgba(0,22,22,0.4);
-}
+	z-index: 100;
+	border-bottom: 2px solid rgb(174,90, 166);
+ }
 #navbar header{
 	font-size: 35px;
 	margin-top: 10px;
@@ -80,39 +82,90 @@ ul{
 .articles{
 	
 	margin: 20px 10px 20px 10px;
-	display: flex;
+	display: block;
 	flex-direction: column;
 	text-align: justify;
 	font-size: 20px;
-}
+} 
 code{
 	font-family: 'Fira Sans Extra Condensed', sans-serif;
 	font-weight: 400;
 	background: rgba(174,118,166,0.3);
-	width: 400px;
+	width: 100%;
 	display: block;
 	padding: 15px 15px 15px 15px;
-	white-space: pre;
 	line-height: 2;
 	border-radius: 5px;
-	position: relative;
 	margin: 15px 15px 15px 15px;
-	
+	overflow-x: hidden;
+	text-align: left;
+	white-space: pre-line;
+	position: relative;
+	word-break: normal;
+	word-wrap: normal;
+
 }
 p{
 	margin: 10px 10px 10px 10px;
 }
-@media only screen and (max-width: 815px){
+@media only screen and (max-width: 800px){
 	#navbar{
 		background-color: white;
 		top: 0;
-		width: 100%;
 		max-height: 275px;
 		border: none;
 		border-bottom: 2px solid rgb(174,90, 166);
 		display: flex;
 		flex-flow: column;
-		width:100vw;
+		width:auto;
+		position:relative;
+	} 
+	#navbar  ul{
+		display: block;
+		list-style-type: disc;
+		padding-left: 0px;
+		margin-top:16px;	
+	}
+	
+	#main-doc {
+		position: relative;
+		margin-left: 0px;
+	
+	}
+
+	#navbar li{
+		left:0px;
+		padding-left:20px;
+		width: auto;
+		
+	}
+	.nav-link{
+		color: #4d4e53;
+		text-decoration: none;
+		cursor: pointer;
+		font-size: 23px;
+		
+	}
+	#navbar li:hover{
+		background: rgb(124, 3, 175);
+		color: aliceblue;
+	}
+	code {
+		width:100%;
+		
+	}
+}
+@media only screen and (max-width: 600px){
+	#navbar{
+		background-color: white;
+		top: 0;
+		max-height: 275px;
+		border: none;
+		border-bottom: 2px solid rgb(174,90, 166);
+		display: flex;
+		flex-flow: column;
+		width:auto;
+		position:relative;
 		
 	} 
 	#navbar  ul{
@@ -125,9 +178,15 @@ p{
 	#main-doc {
 		position: relative;
 		margin-left: 0px;
-		margin-top: 270px;
+	
 	}
-
+	.nav-link{
+		color: #4d4e53;
+		text-decoration: none;
+		cursor: pointer;
+		font-size: 23px;
+		
+	}
 	#navbar li{
 		left:0px;
 		padding-left:20px;
@@ -138,4 +197,10 @@ p{
 		background: rgb(124, 3, 175);
 		color: aliceblue;
 	}
+	code {
+		width:100%;
+	
+	}
+
 }
+ 
