@@ -13,15 +13,45 @@ body{
 #main-doc{
     display: flex;
     flex-flow: column nowrap;
-
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
 }
-
+#navbar{
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0,22,22,0.4);
+}
+#navbar header{
+    font-size: 40px;
+    margin-top: 10px;
+}
+#navbar ul{
+    height: 88%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+ul{
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
 .header{
     font-size: 50px;
     font-weight: 500;
     font-family: 'Oswald', sans-serif;
-    border: 1px black solid;
     display: flex;
+    padding: 10px 10px 10px 10px;
 }
 .articles{
     background: rgb(139, 180, 255);
@@ -36,9 +66,14 @@ code{
     font-weight: 400;
     background: #546cc3;
     width: 400px;
-    height: 100px;
     display: block;
     padding: 10px 10px 10px 10px;
+    white-space: pre;
+    padding: 10px 10px 10px 10px;
+    line-height: 2;
+    border-radius: 5px;
+    position: relative;
+
 }
 p{
     margin: 10px 10px 10px 10px;
